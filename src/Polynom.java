@@ -21,6 +21,11 @@ public class Polynom implements Function {
 
     @Override
     public double calculateDerivativeAtPoint(double x) {
-        return 0;
+        int n = factors.length;
+        double result = 0;
+        for (int i = 0; i < n-1; i++){
+            result += (n-i-1)*factors[i]*Math.pow(x, n-i-2);
+        }
+        return result;
     }
 }
