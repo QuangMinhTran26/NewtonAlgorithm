@@ -3,6 +3,10 @@ import java.util.Arrays;
 public class Polynom implements Function {
     private double[] factors;
 
+    public Polynom (double[] factors){
+        this.factors = factors;
+    }
+
     public double[] getFactors(){
         return factors;
     }

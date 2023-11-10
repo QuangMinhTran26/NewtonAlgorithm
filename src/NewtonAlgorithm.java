@@ -1,30 +1,16 @@
-public class NewtonAlgorithm  {
-    private Function function;
-    public Function getFunction() {
-        return function;
-    }
-
-    public void setFunction(Function function) {
-        this.function = function;
-    }
-
-    public double findRoot(Function function, double x){
-
-        double result = 0;
-        double guess = 0;
-        boolean flag = true;
-
-        x = x - function.calculateValue(x)/function.calculateDerivativeAtPoint(x);
-        result += x;
+public class NewtonAlgorithm {
 
 
-//        while (true){
-//
-//            if (x < 0.0000001 || x > 5 || x < -5) break;
-//
-//        }
+    public double findRoot(Function function, double x) {
+        {
+            for (int i = 0; i < 100; i++) {
 
-        return result;
+                x = x - function.calculateValue(x) / function.calculateDerivativeAtPoint(x);
+            }
+
+        }
+
+        return x;
     }
 
 }
