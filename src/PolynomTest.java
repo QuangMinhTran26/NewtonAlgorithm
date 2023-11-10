@@ -1,9 +1,11 @@
+import org.junit.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-class PolynomTest {
+public class PolynomTest {
 
-    @org.junit.jupiter.api.Test
-    void calculateValue() {
+    @Test
+    public void calculateValue() {
         Polynom p = new Polynom();
         double[] test = {2,1,2};
         p.getFactors();
@@ -14,7 +16,7 @@ class PolynomTest {
     }
 
     @org.junit.jupiter.api.Test
-    void calculateDerivativeAtPoint() {
+    public void calculateDerivativeAtPoint() {
         Polynom p = new Polynom();
         double[] test = {4,3,2,1};
         p.getFactors();

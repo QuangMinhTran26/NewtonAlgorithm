@@ -1,6 +1,5 @@
 public class NewtonAlgorithm  {
     private Function function;
-
     public Function getFunction() {
         return function;
     }
@@ -11,9 +10,21 @@ public class NewtonAlgorithm  {
 
     public double findRoot(Function function, double x){
 
-        x = x - function.calculateValue(x)/function.calculateDerivativeAtPoint(x);
+        double result = 0;
+        double guess = 0;
+        boolean flag = true;
 
-        return x;
+        x = x - function.calculateValue(x)/function.calculateDerivativeAtPoint(x);
+        result += x;
+
+
+//        while (true){
+//
+//            if (x < 0.0000001 || x > 5 || x < -5) break;
+//
+//        }
+
+        return result;
     }
 
 }

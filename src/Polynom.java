@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Polynom implements Function {
     private double[] factors;
 
@@ -27,5 +29,12 @@ public class Polynom implements Function {
             result += (n-i-1)*factors[i]*Math.pow(x, n-i-2);
         }
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Polynom{" +
+                "factors=" + Arrays.toString(factors) +
+                '}';
     }
 }
