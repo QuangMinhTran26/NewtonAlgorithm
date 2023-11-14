@@ -1,9 +1,9 @@
 import java.util.Arrays;
 
-public class Polynom implements Function {
+public class Polynomial implements Function {
     private double[] factors;
 
-    public Polynom (double[] factors){
+    public Polynomial(double[] factors){
         this.factors = factors;
     }
 
@@ -37,7 +37,7 @@ public class Polynom implements Function {
 
     @Override
     public String toString() {
-        return "Polynom{" +
+        return "Polynomial{" +
                 "factors=" + Arrays.toString(factors) +
                 '}';
     }
