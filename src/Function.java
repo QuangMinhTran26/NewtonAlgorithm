@@ -1,5 +1,5 @@
 public interface Function {
 
-    public double calculateValue(double x);
-    public double calculateDerivativeAtPoint(double x);
+    double calculateValue(double x);
+    double calculateDerivativeAtPoint(double x);
 }
