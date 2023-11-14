@@ -4,7 +4,7 @@ public class Polynomial implements Function {
     private double[] factors;
 
     public Polynomial(double[] factors){
-        this.factors = factors;
+        setFactors(factors);
     }
 
     public double[] getFactors(){
