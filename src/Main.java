@@ -22,6 +22,7 @@ public class Main {
         Composite composite = new Composite();
         double cFunction = composite.composite(outside, inside, 1);
         System.out.println(cFunction);
+        //Composite
 
     }
 }
