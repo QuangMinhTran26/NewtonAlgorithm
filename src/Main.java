@@ -4,7 +4,6 @@ public class Main {
         double[] factors = {1, -2, 1};
         NewtonAlgorithm newton = new NewtonAlgorithm();
         Polynomial fPolynomial = new Polynomial(factors);
-
         double root = newton.findRoot(fPolynomial, 2);
         System.out.println(root);
         // Origin Newton Algorithm
