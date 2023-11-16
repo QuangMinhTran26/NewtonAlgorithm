@@ -13,9 +13,15 @@ public class Main {
         double[] under = {1, 1};
         RationalFunction rational = new RationalFunction();
         double rFunction = rational.externForRationalFunction(over, under, 2);
-        System.out.print(rFunction);
+        System.out.println(rFunction);
         // Rational Function
 
+
+        double[] inside = {5, 2};
+        double[] outside = {1, 0, 0, 0};
+        Composite composite = new Composite();
+        double cFunction = composite.composite(outside, inside, 1);
+        System.out.println(cFunction);
 
     }
 }
